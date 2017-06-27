@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?><xs:schema xmlns:tns="http://service.project2.prova/" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://service.project2.prova/" version="1.0">
+<xs:element name="addCampnhaClient" type="tns:addCampnhaClient"/>
+<xs:element name="addCampnhaClientResponse" type="tns:addCampnhaClientResponse"/>
+<xs:element name="addClient" type="tns:addClient"/>
+<xs:element name="addClientResponse" type="tns:addClientResponse"/>
+<xs:element name="deleteClient" type="tns:deleteClient"/>
+<xs:element name="deleteClientResponse" type="tns:deleteClientResponse"/>
+<xs:element name="getClientCampanhas" type="tns:getClientCampanhas"/>
+<xs:element name="getClientCampanhasResponse" type="tns:getClientCampanhasResponse"/>
+<xs:element name="getPossibleCampanhas" type="tns:getPossibleCampanhas"/>
+<xs:element name="getPossibleCampanhasResponse" type="tns:getPossibleCampanhasResponse"/>
+<xs:element name="updateClient" type="tns:updateClient"/>
+<xs:element name="updateClientResponse" type="tns:updateClientResponse"/>
+<xs:complexType name="addCampnhaClient">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="addCampnhaClientResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="getClientCampanhas">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="getClientCampanhasResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="getPossibleCampanhas">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="getPossibleCampanhasResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="addClient">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="addClientResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="deleteClient">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="deleteClientResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="updateClient">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="updateClientResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

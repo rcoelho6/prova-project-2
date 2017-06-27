@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="ClientServiceImplService" targetNamespace="http://service.project2.prova/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://service.project2.prova/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+  <import namespace="http://service.project2.prova/" schemaLocation="clientserviceimpl_schema1.xsd"/>
+</schema>
+  </wsdl:types>
+  <wsdl:message name="addCampnhaClientResponse">
+    <wsdl:part name="parameters" element="tns:addCampnhaClientResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getClientCampanhasResponse">
+    <wsdl:part name="parameters" element="tns:getClientCampanhasResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addCampnhaClient">
+    <wsdl:part name="parameters" element="tns:addCampnhaClient">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getClientCampanhas">
+    <wsdl:part name="parameters" element="tns:getClientCampanhas">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getPossibleCampanhas">
+    <wsdl:part name="parameters" element="tns:getPossibleCampanhas">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getPossibleCampanhasResponse">
+    <wsdl:part name="parameters" element="tns:getPossibleCampanhasResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteClientResponse">
+    <wsdl:part name="parameters" element="tns:deleteClientResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addClient">
+    <wsdl:part name="parameters" element="tns:addClient">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteClient">
+    <wsdl:part name="parameters" element="tns:deleteClient">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateClient">
+    <wsdl:part name="parameters" element="tns:updateClient">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateClientResponse">
+    <wsdl:part name="parameters" element="tns:updateClientResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addClientResponse">
+    <wsdl:part name="parameters" element="tns:addClientResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="ClientService">
+    <wsdl:operation name="addCampnhaClient">
+      <wsdl:input name="addCampnhaClient" message="tns:addCampnhaClient">
+    </wsdl:input>
+      <wsdl:output name="addCampnhaClientResponse" message="tns:addCampnhaClientResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getClientCampanhas">
+      <wsdl:input name="getClientCampanhas" message="tns:getClientCampanhas">
+    </wsdl:input>
+      <wsdl:output name="getClientCampanhasResponse" message="tns:getClientCampanhasResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPossibleCampanhas">
+      <wsdl:input name="getPossibleCampanhas" message="tns:getPossibleCampanhas">
+    </wsdl:input>
+      <wsdl:output name="getPossibleCampanhasResponse" message="tns:getPossibleCampanhasResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addClient">
+      <wsdl:input name="addClient" message="tns:addClient">
+    </wsdl:input>
+      <wsdl:output name="addClientResponse" message="tns:addClientResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteClient">
+      <wsdl:input name="deleteClient" message="tns:deleteClient">
+    </wsdl:input>
+      <wsdl:output name="deleteClientResponse" message="tns:deleteClientResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateClient">
+      <wsdl:input name="updateClient" message="tns:updateClient">
+    </wsdl:input>
+      <wsdl:output name="updateClientResponse" message="tns:updateClientResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ClientServiceImplServiceSoapBinding" type="tns:ClientService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="addCampnhaClient">
+      <soap:operation soapAction="urn:AddCampnhaClient" style="document"/>
+      <wsdl:input name="addCampnhaClient">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addCampnhaClientResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getClientCampanhas">
+      <soap:operation soapAction="urn:GetClientCampanhas" style="document"/>
+      <wsdl:input name="getClientCampanhas">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getClientCampanhasResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPossibleCampanhas">
+      <soap:operation soapAction="urn:GetPossibleCampanhas" style="document"/>
+      <wsdl:input name="getPossibleCampanhas">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getPossibleCampanhasResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addClient">
+      <soap:operation soapAction="urn:AddClient" style="document"/>
+      <wsdl:input name="addClient">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addClientResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteClient">
+      <soap:operation soapAction="urn:DeleteClient" style="document"/>
+      <wsdl:input name="deleteClient">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteClientResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateClient">
+      <soap:operation soapAction="urn:UpdateClient" style="document"/>
+      <wsdl:input name="updateClient">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="updateClientResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ClientServiceImplService">
+    <wsdl:port name="ClientServiceImplPort" binding="tns:ClientServiceImplServiceSoapBinding">
+      <soap:address location="http://localhost:8080/prova-project-2/services/ClientServiceImplPort"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
